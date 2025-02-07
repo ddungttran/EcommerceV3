@@ -1,9 +1,9 @@
 function Slideshow() {
     const slides = [
-      { img: "/images/Mroom.png", alt: "Slide 1" },
-      { img: "/images/pic1.webp", alt: "Slide 2" },
-      { img: "/images/pic2.webp", alt: "Slide 3" },
-      { img: "/images/pic3.webp", alt: "Slide 4" },
+      { img: "/Mroom.png", alt: "Slide 1" },
+      { img: "/pic1.webp", alt: "Slide 2" },
+      { img: "/pic2.webp", alt: "Slide 3" },
+      { img: "/pic3.webp", alt: "Slide 4" },
     ];
   
     return (

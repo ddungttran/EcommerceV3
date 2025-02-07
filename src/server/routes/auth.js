@@ -64,6 +64,7 @@ router.post("/login", async (req, res) => {
 
 // Middleware to Protect Routes
 const authenticateUser = (req, res, next) => {
+  console.log("Received cookies:", req.cookies);
   const token = req.cookies.token;
   if (!token) return res.status(401).json({ message: "Unauthorized" });
 
