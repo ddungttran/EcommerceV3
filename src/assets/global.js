@@ -1,7 +1,7 @@
 // 🌍 GLOBAL.JS - Centralized Configuration & Utility Functions
 
 // API Base URL (Backend Server)
-export const API_BASE_URL = "http://localhost:5000/api"; // Change this to match your backend
+export const API_BASE_URL = "https://ecommercev3.onrender.com/api"; // Change this to match your backend
 
 //  Utility Functions
 // Format price as currency
