@@ -7,7 +7,7 @@ function ProductList() {
   const [error, setError] = useState(null); // Handle errors
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/products")
+    axios.get("https://ecommercev3.onrender.com/api/products")
       .then(response => {
         console.log("Products fetched:", response.data);
         setProducts(response.data);
