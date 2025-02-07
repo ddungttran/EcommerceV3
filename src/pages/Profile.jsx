@@ -8,7 +8,7 @@ const Profile = () => {
 
   // Fetch user data
   useEffect(() => {
-    axios.get("https://ecom-app-9309753eeb1b.herokuapp.com/api/auth/me", { withCredentials: true }) 
+    axios.get("https://ecommercev3.onrender.com/api/auth/me", { withCredentials: true }) 
       .then(response => {
         console.log("User data fetched:", response.data);
         setUser(response.data);
@@ -21,7 +21,7 @@ const Profile = () => {
   // Logout function
   const handleLogout = async () => {
     try {
-      await axios.post("https://ecom-app-9309753eeb1b.herokuapp.com/api/auth/logout", {}, { withCredentials: true });
+      await axios.post("https://ecommercev3.onrender.com/api/auth/logout", {}, { withCredentials: true });
       navigate("/"); // Redirect to home page after logout
     } catch (error) {
       console.error("Logout failed:", error);
